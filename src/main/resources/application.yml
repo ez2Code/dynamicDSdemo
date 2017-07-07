@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    db-master:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/bus_data?serverTimezone=UTC&useSSL=true
+      username: bus_admin
+      password: adminpass
+    db-read:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/bus_data_read?serverTimezone=UTC&useSSL=true
+      username: bus_admin
+      password: adminpass
+  aop:
+    auto: true
